@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/big-search-len.png" type="image/x-icon" />
+    <title>Busca de Turmas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .form-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #00796b;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #00796b;
+        }
+        .form-container input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #b0bec5;
+            border-radius: 6px;
+            font-size: 16px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input[type="submit"] {
+            background-color: #00796b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+        .form-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .form-container ul li {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Busca de Turmas</h1>
+        <ul>
+            <li>INFD3</li>
+            <li>CTI2</li>
+            <li>INFN3</li>
+        </ul>
+        <form method="get" action="buscar_c.php">
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma" placeholder="Digite a turma...">
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+</body>
+</html>
